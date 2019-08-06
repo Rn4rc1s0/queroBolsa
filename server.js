@@ -1,5 +1,3 @@
-// Arquivo responsável pela execução do projeto
-
 const express = require('express');
 const app = new express();
 const port = 3000;

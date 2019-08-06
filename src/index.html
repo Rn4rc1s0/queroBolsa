@@ -1,0 +1,309 @@
+<<!DOCTYPE html>
+<html lang="pt-BR">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+            <title>Quero Bolsa</title>
+
+        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="/src/css/style.css">
+        <link rel="stylesheet" href="/src/css/grid.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+        <link rel="shortcut icon" href="/src/img/quero-bolsa-icone.png">
+    </head>
+    
+    <body>
+        <header>
+            <nav class='nav nav--style-light nav--priority-primary'>
+                <div class="container">
+                    <div class="row">        
+                        <div class="col col-sm-2">
+                            <div class='nav-item'>
+                                <div class="row">
+                                    <div class="col col-3">
+                                        <div class="vertical-center">
+                                            <i class="fas fa-info-circle"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col col-9">
+                                        <div class="vertical-center">
+                                            <span class='display--desktop-only'>Como funciona</span>
+                                            <span class='display--mobile-only'>Ajuda</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-3 display--desktop-only">
+                            <div class="row nav-whatsapp ">
+                                <div class="col col-sm-1 ">
+                                    <div class="vertical-center">
+                                        <i class="fab fa-whatsapp" style='font-size:15pt;color:#0FA866;'></i>
+                                    </div>
+                                </div>
+                                <div class="col col-sm-11 ">
+                                    <div class="vertical-center">
+                                        <p class='font-weight--bold' style='text-align: left;margin-left: 5px;'>0800 123 2222</p>
+                                        <p style='text-align: left;margin-left: 5px;'>Envie mensagem ou ligue </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-sm-8 col-5">
+                            <div class='nav-item nav-logo'>
+                                <img src="/src/img/quero-bolsa.png" height="35" width='98' alt="Quero Bolsa">
+                            </div>
+                        </div>        
+                        <div class="col col-sm-2 ">
+                            <div class='nav-item'>
+                                <div class="row">
+                                    <div class="col col-10 display--desktop-only">
+                                        <div class="vertical-center">
+                                            <span class='display--desktop-only'>Nome Sobrenome</span>
+                                        </div>
+                                    </div>
+                                    <div class="col col-2">
+                                        <div class="vertical-center">
+                                            <i class="far fa-user-circle"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col col-10 display--mobile-only">
+                                        <div class="vertical-center">
+                                            <span class='display--mobile-only'>Conta</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav class='nav nav--style-blue nav--priority-secondary'>
+                <div class="row">
+                    <div class="container">
+                        <div class="col col-sm-4 col-2">
+                            <div class='nav-item nav-item--align-left'>
+                                Minha conta
+                            </div>
+                        </div>
+                        <div class="col col-2 display--desktop-only">
+                            <div class='nav-item nav-item--align-left'>
+                                Pré-Matrículas
+                            </div>
+                        </div>
+                        <div class="col col-2 display--desktop-only">
+                            <div class='nav-item nav-item--align-left'>
+                                Bolsas Favoritas
+                            </div>
+                        </div>
+                        <div class="col col-sm-4 display--mobile-only"></div>
+                        <div class="col col-sm-4 col-2 display--mobile-only">
+                            <div class='nav-item nav-item--align-right'>
+                                Menu
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="container">
+                <br>
+                    <span class='font-weight--bold font-size--small'>
+                        <div class="display--mobile-only">
+                            <a class='link text-color--blue' href="#">
+                                <i class="fas fa-chevron-left" style='margin-right:5px'></i> 
+                                Minha conta
+                            </a>
+                        </div>
+                        <div class="display--desktop-only">
+                            <span class="font-color--blue">Home</span> | <span class="font-color--blue">Minha conta</span> | Bolsas favoritas
+                        </div>
+                    </span>
+                    <section>
+                        <h1>Bolsas Favoritas</h1>
+                        <p style='margin-bottom:20px'>
+                            Adicione bolsas de cursos e faculdades do seu interesse e receba
+                            atualizações com as melhores ofertas disponíveis.
+                        </p>
+                    </section>
+                    <div class="row">
+                        <div class="col col-6"></div>
+                        <div id='semester-all'
+                        class="col col-2 select-card select-card--position-top select-card--status-selected filter-semester">
+                            Todos os semestres
+                        </div>
+                        <div id='semester-2019_2' class="col col-2 select-card filter-semester">
+                            2º semestre de 2019
+                        </div>
+                        <div id='semester-2020_1' class="col col-2 select-card select-card--position-bottom filter-semester">
+                            1º semestre de 2020
+                        </div>
+                    </div>
+<!-- div.row -->
+                <br>
+                    <section id='favourites-scholarships-section'>
+                        <div class="row" id='favourites-scholarships'></div>
+                    </section>
+            </div>
+<!-- div.container -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close" id='btnClose'>&times;</span>
+                        <h2>Adicionar bolsa</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>Filtre e adiciona as bolsas de seu interesse.</p>
+                        <br>
+                            <div class="row">
+                                <div class="col col-6">
+                                    <label class='label' for="selectCity"> SELECIONE SUA CIDADE </label>
+                                    <br>
+                                    <select class='select' id='selectCity' name="selectCity"></select>
+                                </div>
+                                <div class="col col-6">
+                                    <label class='label' for="selectCourse"> SELECIONE O CURSO DE SUA PREFERÊNCIA </label>
+                                    <br>
+                                    <select class='select' id='selectCourse' name="selectCourse"></select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-6">
+                                    <p class='label'>
+                                        COMO VOCÊ QUER ESTUDAR?
+                                    </p>
+                                    <div class="row">
+                                        <div class='col col-sm-6' style='margin-bottom: 10px;'>
+                                            <label class='checkbox-container'>
+                                                <input type="checkbox" id="presentialLearning" name="ensinoPresencial">
+                                                <span class="checkmark"></span>
+                                                    Presencial
+                                            </label>
+                                        </div>
+                                        <div class='col col-sm-6'>
+                                            <label class='checkbox-container'>
+                                                <input type="checkbox" id="disntanceLearning" name="ensinoDistancia">
+                                                <span class="checkmark"></span>
+                                                    A distância
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-6">
+                                    <label class='label' for="price"> ATÉ QUANTO PODE PAGAR? </label>
+                                    <br>R$<span id='priceSpan'> - </span>
+                                    <input class='input-range' type="range" name="price" id="price" min='0' max='2000' step="100" value='2000'>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-sm-3">
+                                    <span class="font-weight--bold">Resultado:</span>
+                                </div>
+                                <div class="col col-sm-9" style='text-align: right'>
+                                    <span class="font-weight--bold display-mobile--block">Ordenar por:</span>
+                                    <span class="font-weight--bold font-color--blue" style='cursor: pointer'>Nome da faculdade
+                                    <i class="fas fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div id="scholarships-list"></div>
+                    </div>
+<!-- list -->
+                    
+<!-- modal-body -->
+                    <div class="modal-footer">
+                        <div class="row col-6" style='margin-right: 0;margin-left:auto'>
+                            <div class="col col-sm-5">
+                                <button id='btnCancel' class='button button--size-block button--style-outline-blue'>Cancelar</button>
+                            </div>
+                            <div class="col col-sm-7">
+                                <button id='buttonAddScholarships'
+                                class='button button--style-yellow button--size-block button--state-disabled' disabled>Adicionar bolsa(s)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class='footer bg--color-blue'>
+            <div class="row bg--color-dark-blue">
+                <div class="col col-3">
+                    <div class='footer-whatsapp-item' style='padding: 10px 60px;'>
+                        <div class="row">
+                            <div class="col col-sm-2 col-3"> <i class="fab fa-whatsapp" style='font-size:24pt;'></i> </div>
+                                <div class="col col-sm-10 col-9">
+                                    <p class='font-weight--bold' style='text-align: left'>0800 123 2222</p>
+                                    <p style='text-align: left'>Segunda a sexta de 8h às 22h </p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-3 display--desktop-only">
+                        <div style='padding: 10px 60px'>
+                            <div class="row">
+                                <div class="col col-sm-2 col-3"> <i class="far fa-comments" style='font-size:24pt;'></i></div>
+                                <div class="col col-sm-10 col-9">
+                                    <p class='font-weight--bold' style='text-align: left'>Chat ao vivo</p>
+                                    <p style='text-align: left'>Seg - Sex 8h - 22h </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col col-3 display--desktop-only">       
+                    <div style='padding: 10px 60px'>
+                        <div class="row">
+                            <div class="col col-sm-2 col-3"> <i class="far fa-envelope" style='font-size:24pt;'></i></div>
+                            <div class="col col-sm-10 col-9">
+                                <p class='font-weight--bold' style='text-align: left'>Mande um e-mail</p>
+                                <p style='text-align: left'> Respondemos rapidinho</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-3 display--desktop-only">
+                    <div style='padding: 10px 60px'>
+                        <div class="row">
+                            <div class="col col-sm-2 col-3"> <i class="fas fa-info-circle" style='font-size:24pt;'></i></div>
+                            <div class="col col-sm-10 col-9">
+                                <p class='font-weight--bold' style='text-align: left'>Central de ajuda</p>
+                                <p style='text-align: left'> Encontre todas as respostas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-4 bg--color-dark-blue display--mobile-only">
+                    <div style='padding: 14px;'>
+                        <i class="far fa-comments" style='font-size:20pt;margin-bottom: 8px'></i>
+                        <br>
+                            Chat
+                    </div>
+                </div>        
+                <div class="col col-sm-4 bg--color-dark-blue display--mobile-only" id='footer-center-col'>
+                    <div style='padding: 14px;'>
+                        <i class="far fa-envelope" style='font-size:20pt;margin-bottom: 8px'></i>
+                        <br>
+                            E-mail
+                    </div>
+                </div>
+                <div class="col col-sm-4 bg--color-dark-blue display--mobile-only">
+                    <div style='padding: 14px;'>
+                        <i class="fas fa-info-circle" style='font-size:20pt;margin-bottom: 8px'></i>
+                        <br>
+                            Ajuda
+                    </div>
+                </div>
+            </div>
+            <div class='footer-bottom'>
+                Feito com <i class="far fa-heart"></i> pela Quero Educação
+            </div>
+        </footer>
+        
+        <script type="module" src="/src/js/app.js"></script>
+    </body>
+</html>
