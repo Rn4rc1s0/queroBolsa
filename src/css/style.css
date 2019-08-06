@@ -1,0 +1,618 @@
+:root {
+    --primary-blue: #18ACC4;
+    --secondary-blue: #007A8D;
+    --primary-yellow: #FDCB13;
+    --secondary-yellow: #DE9E1F;
+    --green: #0FA866;
+    --black: #1F2D30;
+    --gray: #FBFBFB;
+    --black-overlay: rgba(31, 45, 48, 0.88);
+
+    --modal-duration: 0.5s;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
+    font-weight: 400;
+    color: var(--black);
+    background: var(--gray);
+    overflow-x: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    min-height: 100vh;
+}
+
+h1 {
+    margin: 20px 0 10px 0;
+}
+
+section#bolsas {
+    margin-top: 30px;
+}
+
+section#favourites-scholarships-section {
+    margin-top: 5px;
+}
+
+.margin-bottom--small {
+    margin-bottom: 8px;
+}
+
+.margin-bottom--large {
+    margin-bottom: 24px;
+}
+
+.hr {
+    height: 3px;
+    border: none;
+    background: #eee;
+    margin: 12px 0;
+}
+
+.bg--color-blue {
+    background-color: var(--primary-blue);
+}
+
+.bg--color-dark-blue {
+    background-color: var(--secondary-blue);
+}
+
+.button {
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 3px;
+    color: var(--black);
+    background-color: #fff;
+    border: 1px solid var(--black);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button--state-disabled {
+    color: #999 !important;
+    background-color: #ddd !important;
+    border: 1px solid #bbb !important;
+}
+
+.button--state-disabled:hover {
+    cursor: not-allowed !important;
+}
+
+.button--style-blue {
+    color: #fff;
+    background-color: var(--secondary-blue);
+    border: 1px solid #fff;
+}
+
+.button--style-yellow {
+    color: var(--black);
+    background-color: var(--primary-yellow);
+    border: 1px solid var(--secondary-yellow);
+}
+
+.button--style-outline-blue {
+    color: var(--secondary-blue);
+    background-color: #fff;
+    border: 1px solid var(--secondary-blue);
+}
+
+.button--style-outline-yellow {
+    color: var(--primary-yellow);
+    background-color: var(--black);
+    border: 1px solid var(--primary-yellow);
+}
+
+.button--size-block {
+    width: 100%;
+}
+
+.label {
+    font-size: 8pt;
+    font-weight: bold;
+    margin-bottom: 2px;
+
+}
+
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 25px;
+    width: 100%;
+}
+
+.checkbox-container input {
+    display: none;
+}
+
+.checkbox-container .checkmark {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #eee;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 3px;
+}
+
+.checkbox-container input:checked+.checkmark {
+    background-color: var(--primary-blue);
+}
+
+.checkbox-container input:checked+.checkmark:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    color: var(--gray);
+    font-size: 11px;
+    position: absolute;
+    left: 12%;
+    top: 14%;
+}
+
+.input-range {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+}
+
+.nav {
+    padding: 6px 0;
+    font-weight: bolder;
+    font-size: 10pt;
+
+}
+
+.nav--style-light {
+    background: var(--gray);
+    color: var(--secondary-blue);
+}
+
+.nav--style-blue {
+    background: var(--primary-blue);
+    color: var(--gray);
+}
+
+.nav-item {
+    height: inherit;
+    text-align: center;
+    padding: 2px 5px;
+
+}
+
+.nav-item--align-left {
+    text-align: left;
+}
+
+.nav-item--align-right {
+    text-align: right;
+}
+
+.nav-item i {
+    font-size: 16pt;
+    margin-bottom: 3px;
+}
+
+.nav-item--align-right i {
+    font-size: 8pt;
+    margin-left: 3px;
+}
+
+.card {
+    background: white;
+    text-align: center;
+    font-size: 10pt;
+    margin-bottom: 10px;
+    padding: 20px 20px;
+    border: 1px solid #efefef;
+    -webkit-box-shadow: 0px 5px 5px -5px rgba(191, 191, 191, 1);
+    -moz-box-shadow: 0px 5px 5px -5px rgba(191, 191, 191, 1);
+    box-shadow: 0px 5px 5px -5px rgba(191, 191, 191, 1);
+}
+
+.card-add {
+    cursor: pointer;
+}
+
+.card i.fa-plus-circle {
+    font-size: 70px;
+    color: var(--primary-blue);
+}
+
+.card-title {
+    font-size: 14pt;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.img-favorite-scholarship {
+    width: auto;
+    height: 55px;
+    margin-bottom: 20px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.font-size--small {
+    font-size: 9pt;
+}
+
+.font-color--blue {
+    color: var(--secondary-blue);
+}
+
+.font-color--green {
+    color: var(--green);
+}
+
+.font-color--yellow {
+    color: var(--primary-yellow);
+}
+
+.font-weight--bold {
+    font-weight: bold;
+}
+
+.font-style--slash {
+    text-decoration: line-through;
+}
+
+.font-style--uppercase {
+    text-transform: uppercase;
+}
+
+.text-color--blue {
+    color: var(--secondary-blue);
+}
+
+.select-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--secondary-blue);
+}
+
+.select-card--position-top {
+    border-radius: 3px 3px 0 0;
+}
+
+.select-card--position-bottom {
+    border-radius: 0 0 3px 3px;
+}
+
+.select-card--status-selected {
+    background-color: var(--secondary-blue);
+    color: var(--gray);
+    border: 1px solid var(--secondary-blue);
+}
+
+.footer {
+    color: var(--gray);
+    text-align: center;
+    width: 100%;
+}
+
+.footer-bottom {
+    padding: 30px 10px;
+    font-weight: bolder;
+    font-size: 9pt;
+}
+
+#footer-center-col {
+    border-left: 3px solid var(--primary-blue);
+    border-right: 3px solid var(--primary-blue);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: var(--black-overlay);
+}
+
+.modal-content {
+    margin: 10% auto;
+    width: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+}
+
+.modal-header h2,
+.modal-footer h3 {
+    margin: 0;
+}
+
+.modal-header {
+    padding: 15px 25px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background: var(--gray);
+}
+
+.modal-body {
+    padding: 10px 25px;
+    background: var(--gray);
+}
+
+.modal-footer {
+    padding: 10px 25px;
+    text-align: center;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background: var(--gray);
+}
+
+.close {
+    float: right;
+    font-size: 30px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#scholarships-list {
+    margin-top: 20px;
+    border-top: 3px solid #eee;
+}
+
+.scholarship-item {
+    width: 100%;
+    height: 120px;
+    display: inline-block;
+
+    padding: 12px 0;
+
+    border-bottom: 3px solid #eee;
+}
+
+.scholarship-checkmark {
+    top: 50%;
+    margin-top: 35px;
+}
+
+.scholarship-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 100px;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 25px 0 35px 0;
+}
+
+.scholarship-info {
+    height: 100px !important;
+    padding: 5px 0;
+}
+
+.scholarship-info .row .col p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.filter-semester {
+    cursor: pointer;
+}
+
+/* Aplicado apenas em mobile */
+@media (max-width: 700px) {
+    .display--desktop-only {
+        display: none;
+    }
+
+    .nav-logo {
+        border-left: 3px solid #efefef;
+        border-right: 3px solid #efefef;
+        height: inherit;
+    }
+
+    .footer-whatsapp-item {
+        border-bottom: 3px solid var(--primary-blue);
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+
+    .display-mobile--block {
+        display: block;
+    }
+}
+
+/* Aplicado apenas em desktop */
+@media (min-width: 700px) {
+
+    .scholarship-info .row,
+    .scholarship-info .row .col {
+        height: 100%;
+    }
+
+    .card {
+        height: 387.75px;
+
+    }
+
+    .card-add {
+        padding-top: 117px;
+        padding-bottom: 117px;
+    }
+
+    .scholarship-info .row .col {
+        padding-top: 23px;
+    }
+
+    .text-align--right-desk {
+        text-align: right;
+    }
+
+    .display--mobile-only {
+        display: none;
+    }
+
+    .vertical-center {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        /* column | row */
+        height: 43px;
+    }
+
+    .nav-logo {
+        height: inherit;
+        text-align: left;
+        margin-left: 5px;
+    }
+
+    .nav-whatsapp {
+        border-left: 3px solid #efefef;
+        padding-left: 15px;
+    }
+}
+
+input[type=range] {
+    height: 32px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000;
+    background: #18ACC4;
+    border-radius: 50px;
+    border: 0px solid #000000;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+    background: var(--gray);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: var(--primary-blue);
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000;
+    background: var(--primary-blue);
+    border-radius: 50px;
+    border: 0px solid #000000;
+}
+
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+    background: var(--gray);
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: var(--primary-blue);
+    border: 0px solid #000000;
+    border-radius: 100px;
+    box-shadow: 0px 0px 0px #000000;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: var(--primary-blue);
+    border: 0px solid #000000;
+    border-radius: 100px;
+    box-shadow: 0px 0px 0px #000000;
+}
+
+input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+    background: var(--gray);
+    cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: var(--primary-blue);
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: var(--primary-blue);
+}
