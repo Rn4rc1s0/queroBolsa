@@ -1,0 +1,21 @@
+{
+    "name": "test-quero",
+    "version": "1.0.0",
+    "description": "Teste para vaga de front-end da Quero Educação",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "compile": "tsc -w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Rn4rc1s0/queroBolsa.git"
+    },
+    "author": "Rodolpho Narciso",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Rn4rc1s0/queroBolsa/issues"
+    },
+    "homepage": "https://github.com/Rn4rc1s0/queroBolsa#readme"
+}
