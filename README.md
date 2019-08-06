@@ -7,12 +7,14 @@ Para rodar o projeto, antes certifique-se de ter o Node.Js e o gerenciador de pa
 Para verificar se estão instalados, digite os seguintes comandos em seu terminal:
 
 => npm -v
+```
 => node -v
 
 
 Caso não estejam instalados, instale-os a partir dos seguintes links:
 
 => Node.Js:  https://nodejs.org/en/
+```
 => Npm:  https://www.npmjs.com/
 
 ## Iniciar projeto
