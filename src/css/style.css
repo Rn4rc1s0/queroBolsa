@@ -35,6 +35,94 @@ main {
 h1 {
     margin: 20px 0 10px 0;
 }
+.header {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.header__info {
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+    align-items: center;
+}
+
+.header__login{
+    width: 30%;
+}
+
+span.header__separator {
+    border-right: 1px solid #ccc;
+    height: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header__item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: gray;
+}
+
+.header__item i {
+    color: #fc9f00;
+    font-size: 25px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.header__item span{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header__logo{
+    width: 13%;
+}
+.menu{
+    background-color: #05869b;
+    height: 44px;
+}
+
+ul.menu__itens {
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    padding: 0px 0px;
+}
+
+li.menu__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    list-style: none;
+    padding: 0px 10px;
+}
+
+.menu__title--login {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu__title--active {
+    background-color: rgba(255, 255, 255, 0.22);
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.menu__title a {
+    text-decoration: none;
+    color: inherit;
+}
 
 section#bolsas {
     margin-top: 30px;
@@ -176,7 +264,7 @@ section#favourites-scholarships-section {
 }
 
 .nav {
-    padding: 6px 0;
+    padding: 4px;
     font-weight: bolder;
     font-size: 10pt;
 }
@@ -325,7 +413,6 @@ section#favourites-scholarships-section {
 #footer-center-col {
     border-left: 3px solid var(--primary-blue);
     border-right: 3px solid var(--primary-blue);
-    color: var(--primary-blue);
 }
 
 .modal {
