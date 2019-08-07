@@ -122,7 +122,6 @@ section#favourites-scholarships-section {
     font-size: 8pt;
     font-weight: bold;
     margin-bottom: 2px;
-
 }
 
 .checkbox-container {
@@ -180,7 +179,6 @@ section#favourites-scholarships-section {
     padding: 6px 0;
     font-weight: bolder;
     font-size: 10pt;
-
 }
 
 .nav--style-light {
@@ -197,7 +195,6 @@ section#favourites-scholarships-section {
     height: inherit;
     text-align: center;
     padding: 2px 5px;
-
 }
 
 .nav-item--align-left {
@@ -328,6 +325,7 @@ section#favourites-scholarships-section {
 #footer-center-col {
     border-left: 3px solid var(--primary-blue);
     border-right: 3px solid var(--primary-blue);
+    color: var(--primary-blue);
 }
 
 .modal {
